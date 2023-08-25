@@ -1,0 +1,197 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "该项目用于读取各种类型的文件",
+        "title": "FILESYSY",
+        "contact": {},
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0"
+    },
+    "paths": {
+        "/csv": {
+            "get": {
+                "description": "指定CSV文件获取数据",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "获取CSV数据"
+                ],
+                "summary": "获取CSV数据",
+                "responses": {
+                    "200": {
+                        "description": "成功",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "401": {
+                        "description": "失败",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/excel": {
+            "get": {
+                "description": "指定excel文件获取数据",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "获取excel数据"
+                ],
+                "summary": "获取excel数据",
+                "responses": {
+                    "200": {
+                        "description": "成功",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "401": {
+                        "description": "失败",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/ftp/:path": {
+            "get": {
+                "description": "获取FTP服务器文件信息",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "获取FTP服务器文件信息"
+                ],
+                "summary": "获取FTP服务器文件信息",
+                "responses": {
+                    "200": {
+                        "description": "成功",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "401": {
+                        "description": "失败",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/getJson": {
+            "post": {
+                "description": "获取前端传来的JSON数据并返回",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "获取前端传来的JSON数据"
+                ],
+                "summary": "获取前端传来的JSON数据",
+                "responses": {
+                    "200": {
+                        "description": "成功",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "401": {
+                        "description": "失败",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/json": {
+            "get": {
+                "description": "指定json文件获取数据",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "获取json数据"
+                ],
+                "summary": "获取json数据",
+                "responses": {
+                    "200": {
+                        "description": "成功",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "401": {
+                        "description": "失败",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/txt": {
+            "get": {
+                "description": "指定txt文件获取数据",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "获取txt数据"
+                ],
+                "summary": "获取txt数据",
+                "responses": {
+                    "200": {
+                        "description": "成功",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "401": {
+                        "description": "失败",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/xml": {
+            "get": {
+                "description": "指定xml文件获取数据",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "获取xml数据"
+                ],
+                "summary": "获取xml数据",
+                "responses": {
+                    "200": {
+                        "description": "成功",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "401": {
+                        "description": "失败",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

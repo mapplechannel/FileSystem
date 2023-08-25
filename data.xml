@@ -1,0 +1,17 @@
+<catalog date="2023-04-19" cost="100.00" currency="CNY">
+    <book>
+        <title>Python</title>
+        <author>A</author>
+        <price>50.00</price>
+    </book>
+    <book>
+        <title>Golang</title>
+        <author>B</author>
+        <price>30.00</price>
+    </book>
+    <book>
+        <title>Java</title>
+        <author>C</author>
+        <price>20.00</price>
+    </book>
+</catalog>
